@@ -8,6 +8,5 @@ mkdir "$folderName"
 read -rsp "What is your secret password:  " $password
 
 #Save the password to a file called 'secret.txt in a newly created folder'
-echo -n $password | sha256sum > ./$folderName/secret.txt
-
+echo $password | sha256sum > ./$folderName/secret.txt
 exit 0
