@@ -1,7 +1,7 @@
 #!/bin/bash  
 
 #If there aren't two arguments to the script  
-
+read -rp ""
 if (( $#!=2 )); then  
 
     #Print an error and exit  

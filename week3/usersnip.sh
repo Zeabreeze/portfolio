@@ -14,12 +14,3 @@ case var in
 ;;
 esac
 read -p 'The prompt text goes here' var
-
-
-echo -e 
-[object Object]
-
-echo -e 
-[object Object]
-
-read -rp choice
