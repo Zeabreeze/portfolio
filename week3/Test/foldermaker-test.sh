@@ -1,5 +1,5 @@
 #!/bin/bash  
-  
+     
 #If there aren't two arguments to the script  
 if (( $#!=2 )); then  
     #Print an error and exit  
@@ -14,4 +14,4 @@ do
     mkdir "week $i"  
 done  
 
-exit 0
+exit 0 
