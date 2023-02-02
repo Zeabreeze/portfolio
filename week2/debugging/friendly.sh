@@ -7,3 +7,5 @@ if [ "$name" = "Isaree" ]; then
 else
     echo "Hi $name"
 fi
+
+exit 0
