@@ -1,0 +1,11 @@
+--2023-02-02 14:06:02--  https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+Resolving www.w3.org (www.w3.org)... 104.18.23.19, 104.18.22.19, 2606:4700::6812:1613, ...
+Connecting to www.w3.org (www.w3.org)|104.18.23.19|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 13264 (13K) [application/pdf]
+Saving to: ‘test2/dummy.pdf’
+
+     0K .......... ..                                         100% 54.6K=0.2s
+
+2023-02-02 14:06:04 (54.6 KB/s) - ‘test2/dummy.pdf’ saved [13264/13264]
+

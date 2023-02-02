@@ -1,4 +1,5 @@
 #!/bin/bash
+
 case var in
 {testitems} )
 # code if match
@@ -13,4 +14,5 @@ case var in
 # code if default case
 ;;
 esac
+
 read -p 'The prompt text goes here' var

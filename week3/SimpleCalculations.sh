@@ -5,6 +5,8 @@ red="\e[31m"
 green="\e[32m"
 blue="\e[34m"
 purple="\e[35m"
+brown="\e[33m"
+cyan="\e[36m"
 reset="\e[0m"
 
 #Get the activity choice from a user 
@@ -29,38 +31,39 @@ read -rp  "Choose: 1; 2; 3; 4; or 'q' to quit: " choice
 
     case "$choice" in   
 
-        1)  
-        out=$(($val_a + $val_b))
-        echo -e "${blue}The outcome is : $out" 
+        1)
+    
+        out=$((val_a+val_b))
+        echo -e "${blue} The outcome is: $out"
         exitcd=1  
         ;;  
 
         2)  
-        out=$(($val_a - $val_b)) 
-        echo -e "${green}The outcome is : $out" 
+        out=$((val_a-val_b))
+        echo -e "${green}The outcome is: $out" 
         exitcd=1  
         ;;   
 
         3) 
-        out=$(($val_a * $val_b)) 
-        echo -e "${red}The outcome is : $out" 
+        out=$((val_a*val_b))
+        echo -e "${red}The outcome is: $out"
         exitcd=1  
         ;;  
 
         4)  
-        out=$(($val_a / $val_b)) 
-        echo -e "${purple}The outcome is : $out" 
+        out=$((val_a/val_b))
+        echo -e "${purple}The outcome is: $out"
         exitcd=1  
         ;;  
 
         q)  
-        echo -e "Goodbye.." 
+        echo -e "${brown}Goodbye.." 
         exitcd=1  
         ;;  
 
         *)  
         clear  
-        echo "Incorrect input, please try again." 
+        echo -e "${cyan}Incorrect input, please try again." 
         exitcd=1 
         ;;
 
