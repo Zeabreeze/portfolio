@@ -1,0 +1,4 @@
+
+Aisle: 1234 row: AB
+Aisle: 3489 row: C
+Aisle: 6482 row: FG
