@@ -1,7 +1,16 @@
 #!/bin/bash
 
-#cat /etc/passwd > data.txt
+# Section 5.5 - a script to take a look at the “/etc/passwd” file 
+# and format it into a neat table similar to the one from task 5.4. 
+# This is a 'Step 3: Write UserAccounts.sh' script.
+# Written by: Isaree Benjabawornnun
 
+# First read /etc/passwd to a text file for further analysis
+cat /etc/passwd > data.txt
+
+# Fomat and display the table header
+# Using a field separator ":" to output values to the table
+# Allow colour formatting and spacing for a nice looking table
 echo -e "User Accounts:"  
 awk 'BEGIN {  
     FS=":";  

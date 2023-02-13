@@ -1,5 +1,6 @@
 #!/bin/bash 
 
+ # Section 5.2 excercise
  # Create a script named “regexes.sh” and write grep -r statements to search your work for the following patterns: 
  #   all sed statements 
  #   all lines that start with the letter m 
@@ -23,6 +24,7 @@ case "$choice" in
 
 1) 
 # searching for all sed statements 
+# Testing script on how Awk command works
     grep -r '^sed' ~/scripts/portfolio/week4 > grep1.txt
    # GREP_COLOR='1;35' grep --color=always 
     exit 0
@@ -38,7 +40,7 @@ case "$choice" in
 3) 
 # all lines that contain three digit numbers 
     #grep -r -E 'echo+{3}$'  ~/scripts/portfolio/week4 > grep3.txt
-    grep -r -e '[0-9]…' ~/scripts/portfolio > grep3.txt
+    grep -r -e '[0-9]\d\d\d' ~/scripts/portfolio > grep3.txt
   #  GREP_COLOR='1;37' grep --color=always 
     exit 0
 ;; 

@@ -1,5 +1,7 @@
 #!/bin/bash  
 
+# A script shows Awk command to print out a nice table with colours
+
 echo "Google Server IPs:"  
 awk 'BEGIN {  
     FS=":";  

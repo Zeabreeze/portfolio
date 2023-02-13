@@ -1,1 +1,0 @@
-/home/student/scripts/portfolio/week5/regexscript.sh:    grep -r -w -e 'echo+word1|word2|word3' ~/scripts/portfolio/ > grep4.txt
