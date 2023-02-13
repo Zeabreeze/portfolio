@@ -1,15 +1,17 @@
 #!/bin/bash 
 
-# Output a list of selected fruits 
+# A simple script to show output of a variable array of names.
+# In this case a list of fruits.
+# Written by: Isaree Benjabawornnun
 
-f='Apple Mango Strawberry Orange Banana' 
+# Set the value
+f='Apple Mango Strawberry Orange Banana'
 
-for fr in $f 
+# go through each name in the list
+for fr in $f; do 
 
-do 
-
-echo -e "FRUIT: $fr" 
+    # output the name
+    echo -e "FRUIT: $fr"
 
 done 
-
-echo All done 
+echo -e "All done" 

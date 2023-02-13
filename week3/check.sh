@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Assessment 1 test script
 alpha=2
 beta=3
 gamma=alpha

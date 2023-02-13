@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# A script to go through the file content and check each line in the text file 
+# for what they are and if they match to certain conditions set for the checkings.
+# Written by : Isaree Benjabawornnun
+
 filename="$1" 
 i=1 
     #Go through each line in the file to check
