@@ -8,6 +8,7 @@
 #3. If the number is less than 42, the game should print 'Too Low!' 
 #4. If the number is greater than 42, the game should print 'Too High!' 
 #5. The game should repeat until the user has found the correct number 
+# Written by: Isaree Benjabawornnun
 
 #This function prints a given error  
 
@@ -26,10 +27,12 @@ getNumber()
     done  
 }  
 
+# This function is to check the value entered 
+# matches the answer given or not.
 checkNumber() 
 { 
 if [ "$REPLY" -eq "$1" ]; then 
-    echo -e "Correct!" 
+    echo -e "Right!" 
     exit 0
 elif [ "$REPLY" -gt "$1" ]; then 
     echo -e "Too High!" 
@@ -41,6 +44,8 @@ fi
 
 echo "this is the start of the script"   
 valid=true 
+
+# The idea is to keep asking for the number until the correct value entered
 while [ $valid ]; do 
     getNumber "please type a number between 1 and 100" 1 100 
     checkNumber 42
