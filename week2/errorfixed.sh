@@ -1,6 +1,11 @@
 #!/bin/bash  
 
-secret='shhh' #Don't tell anyone!  
+# A script to give a set value and asking a user to enter the secret word
+# if the user gets it right, then the appropriate script rersponse.
+
+
+# set the value, don't tell anyone!
+secret='shhh'   
 
 read -s -p "what's the secret code? -> "  REPLY
 echo $REPLY
@@ -21,12 +26,14 @@ fi
 
 case $correct in  
 false)  
-    echo "Go Away!" #people who get it wrong need to be told to go away!  
+    #people who get it wrong need to be told to go away!
+    echo "Go Away!"   
     ;;  
 
 true)  
+    #TODO: add a secret menu for people in the know. 
     echo "you have unlocked the secret menu!"  
-    #TODO: add a secret menu for people in the know.  
+     
     ;;  
 
 esac  

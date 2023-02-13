@@ -1,6 +1,13 @@
 #!/bin/bash 
 
-# run password check if the user provides a correct password
+# A script written to show the use of  the “case” statement 
+#to run the three other scripts:
+    #When the user selects 1, it should run folderCreator.sh.
+    #When the user selects 2, it should run folderCopier.sh.
+    #When the user selects 3, it should run setPassword.sh.
+# Written by: Isaree Benjabawornnun 
+
+# run password check script to ensure the user provides a correct password
 ./passwordCheck.sh
 
 exitcd=0 
@@ -17,18 +24,22 @@ read -rp "Please enter 1, 2, 3, or 'q' to quit: " choice
 
     case "$choice" in  
         1) 
+        # run a create folder script
         ./folderCreator.sh
         exitcd=1 
         ;; 
         2) 
+        # run a copying folder script
         ./folderCopier.sh
         exitcd=1 
         ;;  
         3) 
+        # run set a pasword script
         ./setPassword.sh
         exitcd=1 
         ;; 
         q) 
+        # for if the user wants to exit
         exitcd=1 
         echo "Goodbye.." 
         sleep 2 
