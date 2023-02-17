@@ -9,6 +9,7 @@
  #   all lines that would make a good password (use your knowledge of cybersecurity to decide what makes a good password). 
 
 var=0
+path=~/scripts/portfolio/
 while [ $var != 1 ]
 do 
 
@@ -24,39 +25,31 @@ case "$choice" in
 
 1) 
 # searching for all sed statements 
-# Testing script on how Awk command works
-    grep -r '^sed' ~/scripts/portfolio/week4 > grep1.txt
-   # GREP_COLOR='1;35' grep --color=always 
+    grep -r -wG '\ssed' $path > grep1.txt
     exit 0
 ;;
 
 2)  
 #Show only lines that start with 'm' 
-    grep -r -E "^m" ~/scripts/portfolio/week3 > grep2.txt
-   # GREP_COLOR='1;32' grep --color=always 
+    grep -r -E '^m' $path > grep2.txt 
     exit 0
 ;;
 
 3) 
 # all lines that contain three digit numbers 
-    #grep -r -E 'echo+{3}$'  ~/scripts/portfolio/week4 > grep3.txt
-    grep -r -e '[0-9]\d\d\d' ~/scripts/portfolio > grep3.txt
-  #  GREP_COLOR='1;37' grep --color=always 
+    grep -r -oE '[[:digit:]]{3}' $path > grep3.txt
     exit 0
 ;; 
 
 4) 
 #all echo statements with at least three words 
-    #grep -r -w -e 'echo+{3}' ~/scripts/portfolio/ > grep4.txt
-    grep -r -w -e 'echo+word1|word2|word3' ~/scripts/portfolio/ > grep4.txt
- #   GREP_COLOR='1;36' grep --color=always  
-   # grep -r '.*\"[A-Z]|.*\"[1-9]"' ~/scripts/portfolio/ > grep4.txt
+    grep -r -oE '^echo(\w+\W+){0,3}(\W+\w+){0,3}' $path > grep4.txt
     exit 0
 ;;
 5)
 #all lines that would make a good password 
-    grep -r -e '.[a-z A-Z 0-9]{18}' ~/scripts/portfolio/ > grep5.txt
- #   GREP_COLOR='1;30' grep --color=always  
+    #grep -r -eE '^(?=.[a-z])(?=.[0-9])(?=(.*?[A-Z]){3}))\w{6,13}$' $path > grep5.txt
+    grep -r -eoE '(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[a-zA-Z0-9])[^\s]{8,}' $path > grep5.txt
     exit 0
 ;;
 
@@ -66,19 +59,5 @@ case "$choice" in
 esac 
 
 done
-
-#read -rp  "output to screen or to file? Select 's' for screen, 'f' for file:" opt
-
-#if [[ $opt == "s" ]]; then 
-    #printf  
-#exit 0 
-#else
-#if [ $opt == 'f' ]; then  
-
-# printf > output.txt 
-
-#exit 0 
-
-#fi
 
 exit 0
