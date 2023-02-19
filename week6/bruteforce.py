@@ -2,7 +2,7 @@
 
 #Module 6.6, step 1:
 #The purpose is to modify, in this case, a Python script to attempt a brute force attack
-#The original scipt sample was provided by Rajesh Son. 
+#The original scipt sample was provided by Rajesh Soni. 
 #The code has been slightly modified so to test a certain password hash set in.
 #the variable below.  Fordemonstration, I have chosen a basic password
 #so the bruteforce code does not attempt to figure out forever.
