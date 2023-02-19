@@ -12,10 +12,8 @@ cat /etc/passwd > data.txt
 # Using a field separator ":" to output values to the table
 # Allow colour formatting and spacing for a nice looking table
 # Use Regex to make the awk script filter the data to 
-# only show users who have “/bin/bash” listed as their default shell#.
-#print "______________________________________________________________________________________________\n";  
-#print "|    \033[34mUsername\033[0m     |  \033[34mUserID\033[0m   |  \033[34mGroupID\033[0m |               \033[34mHome\033[0m              |      \033[34mShell\033[0m";  
-#print "----------------------------------------------------------------------------------------------\n";  
+# only show users who have “/bin/bash” listed as their default shell.
+#-------------------------------------------------------------------- 
 
 echo -e "User Accounts:"  
 awk 'BEGIN {  
