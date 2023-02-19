@@ -47,7 +47,7 @@ case "$choice" in
     exit 0
 ;;
 5)
-#all lines that would make a good password 
+#all lines that would make a good password - this part does not work out well yet..
     #grep -r -eE '^(?=.[a-z])(?=.[0-9])(?=(.*?[A-Z]){3}))\w{6,13}$' $path > grep5.txt
     grep -r -e -E '(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.[a-zA-Z0-9]){8,13}' $path > grep5.txt
     #[^\s]
