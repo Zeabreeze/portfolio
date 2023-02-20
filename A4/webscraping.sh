@@ -14,7 +14,7 @@
 outf="data.txt" 
 url="https://en.wikipedia.org/wiki/List_of_data_breaches" 
 val1="Entity"
-val2="References[edit]"
+val2="References\[edit\]"
 
 #Scrape the web page and save as a raw data file
 get_webpage()  {
@@ -26,7 +26,8 @@ get_webpage()  {
 clean_html() { 
     cat $outf | sed -e 's/<[^>]*>//g' | 
     sed -n '/'$val1'/,$p' | 
-    sed -n '/'"$val2"'/q;p' > ./temp.txt && cp ./temp.txt $outf 
+    sed -n '/'"$val2"'/q;p' |
+    sed '/\s$/d' > ./temp.txt && cp ./temp.txt $outf 
 } 
 
 #check the content of file while processing 
