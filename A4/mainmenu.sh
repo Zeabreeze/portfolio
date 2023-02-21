@@ -13,8 +13,7 @@
 
 
 # First run password check if the user provides a correct password 
-~/scripts/portfolio/week2/passwordCheck.sh 
-#./passwordCheck.sh 
+./pswdcheck.sh 
 
 #Set variables.
 exitcd=0  

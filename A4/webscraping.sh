@@ -27,7 +27,7 @@ clean_html() {
     cat $outf | sed -e 's/<[^>]*>//g' | 
     sed -n '/'$val1'/,$p' | 
     sed -n '/'"$val2"'/q;p' |
-    sed '/\s$/d' > ./temp.txt && cp ./temp.txt $outf 
+    sed '/\s$/d' > ./temp.txt && cp ./temp.txt $outf
 } 
 
 #check the content of file while processing 

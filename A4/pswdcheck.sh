@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#Check the user’s password against the hash stored in 'password.txt'.    
+#If the user’s password is correct, 
+#print “Access Granted” and quit with the exit code 0.
+#If the user’s password is incorrect 
+#print “Access Denied” and quit with the exit code 1.
+# Written by : Isaree Benjabawornnun
+
+# set colours for presentation
 red="\e[31m"
 green="\e[32m"
 blue="\e[34m"
