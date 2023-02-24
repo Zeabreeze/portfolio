@@ -1,3 +1,4 @@
+Entity:Year:Records:Organization type:Method:Sources
 21st Century Oncology:2016:2,200,000:healthcare:hacked:&#91;5&#93;&#91;6&#93;
 500px:2020:14,870,304:social networking:hacked:&#91;7&#93;
 Accendo Insurance Co.:2020:175,350:healthcare:poor security:&#91;8&#93;&#91;9&#93;
