@@ -43,4 +43,4 @@ plt.ylabel('Records in ratio of 1:100K')
 plt.title('Industry effected by data breaches in 2022')
 
 #save the bar graph to a file
-plt.savefig("task4.png")
+plt.savefig("2022graph.png")
